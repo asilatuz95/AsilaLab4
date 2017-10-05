@@ -27,6 +27,7 @@ public class ImageAdapter extends BaseAdapter{
                 R.drawable.pic_8,
                 R.drawable.pic_9
 
+
         };
 
         public ImageAdapter(Context c){
@@ -53,7 +54,7 @@ public class ImageAdapter extends BaseAdapter{
             ImageView imageView = new ImageView(mContext);
             imageView.setImageResource(mThumbsId[position]);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            imageView.setLayoutParams(new GridView.LayoutParams(70,70));
+            imageView.setLayoutParams(new GridView.LayoutParams(250,250));
             return imageView;
         }
 
